@@ -1,1 +1,1 @@
-# majornas-backend
+Majornas backend
