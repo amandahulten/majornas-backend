@@ -1,5 +1,5 @@
 export default {
-  name: "authorVisit",
+  name: "event",
   title: "Författar Besök",
   type: "document",
   fields: [
@@ -18,6 +18,18 @@ export default {
       },
     },
     {
+      name: "eventType",
+      title: "Typ av event",
+      type: "string",
+      options: {
+        list: [
+          { title: "Författarkväll", value: "authorEvening" },
+          { title: "Bokcirkel", value: "bookcircle" },
+        ],
+      },
+      initalValue: "authorEvening",
+    },
+    {
       name: "mainImage",
       title: "Bild",
       type: "image",
@@ -27,7 +39,7 @@ export default {
     },
     {
       name: "publishedAt",
-      title: "Publicerad",
+      title: "Datum",
       type: "datetime",
     },
     {
