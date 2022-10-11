@@ -9,15 +9,6 @@ export default {
       type: "string",
     },
     {
-      name: "slug",
-      title: "Slug",
-      type: "slug",
-      options: {
-        source: "author",
-        maxLength: 96,
-      },
-    },
-    {
       name: "mainImage",
       title: "Bild",
       type: "image",

@@ -1,11 +1,11 @@
 export default {
   name: "event",
-  title: "Författar Besök",
+  title: "Nyhet",
   type: "document",
   fields: [
     {
       name: "author",
-      title: "Författare",
+      title: "Rubrik",
       type: "string",
     },
     {
@@ -19,7 +19,7 @@ export default {
     },
     {
       name: "eventType",
-      title: "Typ av event",
+      title: "Typ av nyhet",
       type: "string",
       options: {
         list: [
@@ -27,7 +27,6 @@ export default {
           { title: "Bokcirkel", value: "bookcircle" },
         ],
       },
-      initalValue: "authorEvening",
     },
     {
       name: "mainImage",
