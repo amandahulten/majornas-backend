@@ -5,8 +5,8 @@ export default {
   type: "document",
   groups: [
     {
-      title: "startsida",
-      name: "startpage",
+      title: "options",
+      name: "options",
     },
     {
       title: "om",
@@ -14,7 +14,7 @@ export default {
     },
     {
       title: "öppettider",
-      name: "openTimes",
+      name: "openings",
     },
     {
       title: "kontakt",
@@ -26,11 +26,13 @@ export default {
       name: "title",
       title: "Site Title",
       type: "string",
+      group: "options",
     },
     {
       name: "description",
       title: "Site Description",
       type: "text",
+      group: "options",
     },
 
     //kontakt
@@ -59,6 +61,26 @@ export default {
       title: "om",
       type: "text",
       group: "about",
+    },
+
+    //öppettider
+    {
+      name: "opening_w",
+      title: "Tisdag - Fredag",
+      type: "string",
+      group: "openings",
+    },
+    {
+      name: "opening_s",
+      title: "Lördag",
+      type: "string",
+      group: "openings",
+    },
+    {
+      name: "opening_ms",
+      title: "Söndag - Måndag",
+      type: "string",
+      group: "openings",
     },
   ],
 };
