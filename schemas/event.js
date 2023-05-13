@@ -12,10 +12,12 @@ export default {
       name: "slug",
       title: "Slug",
       type: "slug",
+      description: "Glöm inte att trycka på 'Generate'",
       options: {
         source: "author",
         maxLength: 96,
       },
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "eventType",
